@@ -1,6 +1,6 @@
-/* Pellbrook Garden Alliance - main stylesheet
-   Last updated: sometime in 2019 by the previous volunteer webmaster.
-   TODO: clean this up */
+/* Tidewell - main stylesheet
+   Built over a weekend for launch in 2023. Haven't touched it since.
+   TODO: clean this up before Series A */
 
 * {
   margin: 0;
@@ -10,27 +10,29 @@
 }
 
 body {
-  font-family: 'Nunito', Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 15px;
-  line-height: 1.4;
-  color: #8a8a8a;
-  background: #fffdf7;
+  line-height: 1.6;
+  color: #8a94a3;
+  background: #f7fbff;
 }
 
 a {
-  color: #9ccc65;
+  color: #64b5f6;
   text-decoration: none;
 }
 
 h1, h2, h3, h4 {
-  font-weight: 900;
-  color: #2e7d32;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0b2545;
 }
 
-h1 { font-size: 34px; }
-h2 { font-size: 26px; margin-bottom: 14px; }
-h3 { font-size: 18px; margin-bottom: 6px; }
-h4 { font-size: 16px; color: #a5d6a7; margin-bottom: 10px; }
+h1 { font-size: 40px; margin-bottom: 12px; letter-spacing: -0.5px; }
+h2 { font-size: 28px; margin-bottom: 14px; }
+h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+h4 { font-family: 'Inter', Arial, sans-serif; font-size: 17px; font-weight: 500; color: #90caf9; margin-bottom: 10px; }
 
 p { margin-bottom: 12px; }
 
@@ -42,10 +44,11 @@ p { margin-bottom: 12px; }
 
 /* announcement bar */
 .announcement {
-  background: #ff9800;
-  color: #ff5722;
-  font-weight: 900;
-  font-size: 13px;
+  background: #ffcc80;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
   text-align: center;
   padding: 8px;
   white-space: nowrap;
@@ -56,146 +59,151 @@ p { margin-bottom: 12px; }
 /* header */
 .header {
   background: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e3eaf2;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
+  height: 80px;
 }
 
 .logo {
-  width: 220px;
+  width: 150px;
 }
 
 .nav a {
-  margin-left: 18px;
+  margin-left: 24px;
   font-size: 14px;
-  font-weight: 700;
-  color: #a5d6a7;
-  text-transform: uppercase;
+  font-weight: 500;
+  color: #90caf9;
 }
 
 /* hero */
 .hero {
-  background: #f1f8e9 url("../images/leaf-pattern.svg") repeat;
-  padding: 40px 0;
+  background: url("../images/hero.jpg") center / cover no-repeat;
+  position: relative;
+  padding: 110px 0;
 }
 
-.hero-inner {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(227, 242, 253, 0.82);
+}
+
+.hero .container {
+  position: relative;
 }
 
 .hero-text {
-  width: 560px;
+  width: 640px;
 }
 
 .hero-text p {
-  color: #b5b5b5;
-  margin: 10px 0 18px;
+  color: #9fb3c8;
+  margin: 10px 0 22px;
 }
 
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 16px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
   border: 0;
   cursor: pointer;
 }
 
-.btn-green {
-  background: #a5d6a7;
+.btn-blue {
+  background: #90caf9;
   color: #ffffff;
 }
 
-.btn-brown {
-  background: #bcaaa4;
+.btn-gray {
+  background: #cfd8dc;
   color: #ffffff;
 }
 
-.btn-yellow {
-  background: #fff176;
+.btn-peach {
+  background: #ffcc80;
   color: #ffffff;
-}
-
-.hero-image img {
-  width: 800px;
-  border-radius: 8px;
 }
 
 /* stats */
 .stats {
   display: flex;
   justify-content: space-between;
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
 .stat {
   width: 240px;
   background: #ffffff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e3eaf2;
+  border-radius: 12px;
   text-align: center;
-  padding: 20px;
+  padding: 24px 20px;
 }
 
 .stat-number {
-  font-size: 36px;
-  font-weight: 900;
-  color: #c5e1a5;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #bbdefb;
 }
 
 .stat-label {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 /* sections */
 .section {
-  margin: 50px 0;
+  margin: 60px 0;
 }
 
 .about {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: flex-start;
 }
 
 .about-image {
-  width: 380px;
-  height: 240px;
+  flex: 0 0 440px;
+  width: 440px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-.programs {
+.features {
   display: flex;
   gap: 20px;
 }
 
-.program {
-  width: 255px;
+.feature {
+  flex: 1;
   background: #ffffff;
-  border-left: 4px solid #a5d6a7;
-  padding: 14px;
+  border: 1px solid #e3eaf2;
+  border-radius: 12px;
+  padding: 24px;
 }
 
-/* ways to help */
-.help {
+/* get started */
+.get-started {
   background: #ffffff;
-  border: 1px solid #e0e0e0;
-  padding: 24px;
+  border: 1px solid #e3eaf2;
+  border-radius: 12px;
+  padding: 32px;
 }
 
 .newsletter {
@@ -206,17 +214,19 @@ p { margin-bottom: 12px; }
 
 .newsletter input {
   width: 260px;
-  padding: 10px;
-  border: 1px solid #e0e0e0;
+  padding: 11px 14px;
+  border: 1px solid #e3eaf2;
+  border-radius: 8px;
   font-family: inherit;
   font-size: 14px;
-  color: #8a8a8a;
+  color: #8a94a3;
 }
 
 .newsletter button {
-  width: 44px;
-  background: #a5d6a7;
+  width: 46px;
+  background: #90caf9;
   border: 0;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -226,28 +236,28 @@ p { margin-bottom: 12px; }
 
 .fineprint {
   font-size: 11px;
-  color: #cccccc;
+  color: #c5ced8;
 }
 
 /* footer */
 .footer {
-  background: #2e7d32;
-  padding: 24px 0;
-  margin-top: 60px;
+  background: #0b2545;
+  padding: 28px 0;
+  margin-top: 70px;
 }
 
 .footer-links a {
-  color: #4caf50;
-  margin-right: 16px;
+  color: #1f4f82;
+  margin-right: 18px;
   font-size: 13px;
 }
 
 .copyright {
-  color: #43a047;
+  color: #1f4f82;
   font-size: 12px;
   margin-top: 12px;
 }
 
 .copyright a {
-  color: #43a047;
+  color: #1f4f82;
 }

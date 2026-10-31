@@ -1,4 +1,4 @@
-# Loopdash take-home: Pellbrook Garden Alliance
+# Loopdash take-home: Tidewell
 
 This is a small slice of the Junior Designer / Project Manager job. A client emails, you work out what they need, you fix what you can, you ship it as a pull request, and you write back.
 
@@ -6,11 +6,11 @@ Spend about 3 hours, 4 at most. When the time is up, stop and write down what yo
 
 ## The scenario
 
-Open `index.html` in the repo root. It is an email from Dana, who runs a small community garden nonprofit. Her current site is in `site/`. Open `site/index.html` in a browser to see it.
+Open `index.html` in the repo root. It is an email from Dana, cofounder of Tidewell, a seed-stage startup that makes software for physical therapy clinics. Her current site is in `site/`. Open `site/index.html` in a browser to see it.
 
 That email is the whole brief. Some of her asks are vague, some conflict, and at least one should not be done the way she asked. Make a call, and say what you assumed.
 
-Pellbrook, Dana and everyone else in the email are made up. Do not look anyone up or contact anyone.
+Tidewell, Dana, Halyard Ventures and everyone else in the email are made up. Do not look anyone up or contact anyone.
 
 ## What to deliver
 
