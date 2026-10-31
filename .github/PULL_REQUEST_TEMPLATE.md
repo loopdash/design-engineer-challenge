@@ -1,11 +1,10 @@
 ## Plan
 
-Your prioritized task list, or "See TASKS.md". Tag each item mission-critical, critical or important. Mark one as possible paid follow-on. Check off what you finished and leave the rest.
+Your prioritized task list, or "See TASKS.md". Tag each item mission-critical, critical or important. Check off what you finished and leave the rest.
 
 - [ ] Mission-critical:
 - [ ] Critical:
 - [ ] Important:
-- [ ] Possible paid follow-on:
 
 ## Changes
 
