@@ -1,69 +1,34 @@
 ## Summary
 
-Two or three sentences. What did you focus on and why?
-
-## What changed and why
-
-List the changes you made. For each one, say what problem it solved. Group them however makes sense.
-
--
--
--
+Two or three sentences. What did you focus on, and why those things first?
 
 ## Screenshots
 
-Before and after, at desktop (about 1280px wide) and mobile (about 375px wide). Drag images into this box or link to them.
+Desktop is about 1280px wide, mobile about 375px.
 
 | | Before | After |
 |---|---|---|
 | Desktop | | |
 | Mobile | | |
 
-## Reply to the client
+## What changed
 
-Paste your email reply to Dana here, or say that it is in `REPLY.md`.
+- 
 
-## Remaining work
+## Reply to Dana
 
-Tasks a developer could pick up without talking to you. Priority order, highest first. Each one needs a description, acceptance criteria, and a size (S, M, L).
+Paste it here, or say it is in `REPLY.md`.
 
-### 1. Task title (size)
+## What's next
 
-What it is and why it matters.
+The 3 to 5 things you would do next, most important first. One line each is fine.
 
-Acceptance criteria:
-- [ ]
-- [ ]
+1. 
 
-### 2. Task title (size)
+## How you checked it
 
-...
+Browsers, screen widths, and anything else you tested. Note anything you know is still broken.
 
-## QA checklist
+## AI use and time
 
-What you tested and how. Delete lines that do not apply, add ones that do.
-
-- [ ] Browsers checked:
-- [ ] Screen widths checked:
-- [ ] Keyboard navigation (tab through the page, use every control)
-- [ ] Color contrast (tool used:)
-- [ ] Alt text on images
-- [ ] Form labels
-- [ ] All links clicked
-- [ ] HTML validated (tool used:)
-
-Still broken or not done:
-
--
-
-## AI use
-
-Which tools, for what, and what you kept or threw away.
-
-## Time spent
-
-Actual hours. Rough is fine.
-
-## Anything else
-
-Assumptions you made, questions you would ask in a kickoff, things you would do with more time.
+Which tools you used, for what, and what you changed or threw away. Roughly how long you spent.
