@@ -32,6 +32,14 @@ Browsers, screen widths and tools you checked with. Note anything you know is st
 
 Tools you used and what for. Paste one prompt or skill you used. Name one thing you rejected or corrected from the AI's output, and say why in a sentence.
 
+## UX improvements
+
+Your 3 best UX improvements beyond what Dana asked for, best first. For each: the problem, the change you propose, and why it matters to Dana's visitors. One short paragraph or 2 to 3 bullets each. Say whether you built it. About 15 minutes.
+
+1. 
+2. 
+3. 
+
 ## Client email
 
 Paste it here, or write "See CLIENT_EMAIL.md".

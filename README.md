@@ -21,12 +21,13 @@ Pellbrook, Dana and everyone else in the email are made up. Do not look anyone u
 3. **A pull request** with before and after screenshots at desktop and mobile widths, what changed, what you didn't do and why, and how you tested it. The PR template has a spot for each.
 4. **Your AI workflow**, in the PR. Paste one prompt or skill you used, and one thing you rejected or corrected from the AI's output, with a sentence on why.
 5. **An email to Dana**, written after the work is done, telling her the new homepage is ready for review. Use plain language. Say what changed, what isn't done yet and why, and what you need from her. If something she asked for is bigger than this job, say so and offer it as its own project. Put it in `CLIENT_EMAIL.md` or in the PR. One email, not two.
+6. **Three UX improvements, beyond what Dana asked for.** List the 3 changes you would recommend most for her visitors. For each one, give the problem, the change you propose, and why it matters to the people using the site, in one short paragraph or 2 to 3 bullets. Put them in the PR under "UX improvements" (the template has a spot). You don't have to build them, but you may if you have time. Budget about 15 minutes for this.
 
 Optional, a line or two in the PR: if this site were on WordPress, what would you do differently?
 
 ## Time box
 
-About 3 hours, 4 at most, for all five. When the time is up, stop. Leave what's left on your task list. Clear choices on a few things beat a rushed pass at everything.
+About 3 hours, 4 at most, for all six. The UX improvements list should take about 15 of those minutes. When the time is up, stop. Leave what's left on your task list. Clear choices on a few things beat a rushed pass at everything.
 
 ## Tools
 
@@ -50,7 +51,7 @@ Optional: turn on GitHub Pages for your fork and put the link in your email to D
 
 ## What happens next
 
-After you submit, we'll set up a 30 minute call with Gary. This is not part of the 3 hours. You'll walk through your design and your PR and explain your choices. For a few minutes Gary will play Dana and push back on something in your email, and you'll answer as you would on a real client call. You don't need to prepare anything beyond your submission.
+After you submit, we'll set up a 30 minute call with Gary. This is not part of the 3 hours. You'll walk through your design and your PR and explain your choices, including your 3 UX improvements: be ready to say why you picked them and why in that order. For a few minutes Gary will play Dana and push back on something in your email, and you'll answer as you would on a real client call. You don't need to prepare anything beyond your submission.
 
 ## What we look for
 
