@@ -1,0 +1,270 @@
+/* Pellbrook Garden Alliance - main stylesheet
+   Last updated: sometime in 2019 by the previous volunteer webmaster.
+   TODO: clean this up */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #8a8a8a;
+  background: #fffdf7;
+}
+
+a {
+  color: #9ccc65;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+  color: #2e7d32;
+}
+
+h1 { font-size: 34px; }
+h2 { font-size: 26px; margin-bottom: 14px; }
+h3 { font-size: 18px; margin-bottom: 6px; }
+h4 { font-size: 16px; color: #a5d6a7; margin-bottom: 10px; }
+
+p { margin-bottom: 12px; }
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* announcement bar */
+.announcement {
+  background: #ff9800;
+  color: #ff5722;
+  font-weight: 900;
+  font-size: 13px;
+  text-align: center;
+  padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+/* header */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.logo {
+  width: 220px;
+}
+
+.nav a {
+  margin-left: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #a5d6a7;
+  text-transform: uppercase;
+}
+
+/* hero */
+.hero {
+  background: #f1f8e9 url("../images/leaf-pattern.svg") repeat;
+  padding: 40px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text {
+  width: 560px;
+}
+
+.hero-text p {
+  color: #b5b5b5;
+  margin: 10px 0 18px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-green {
+  background: #a5d6a7;
+  color: #ffffff;
+}
+
+.btn-brown {
+  background: #bcaaa4;
+  color: #ffffff;
+}
+
+.btn-yellow {
+  background: #fff176;
+  color: #ffffff;
+}
+
+.hero-image img {
+  width: 800px;
+  border-radius: 8px;
+}
+
+/* stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.stat {
+  width: 240px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 900;
+  color: #c5e1a5;
+}
+
+.stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* sections */
+.section {
+  margin: 50px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 255px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 14px;
+}
+
+.card img {
+  width: 227px;
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.programs {
+  display: flex;
+  gap: 20px;
+}
+
+.program {
+  width: 340px;
+  background: #ffffff;
+  border-left: 4px solid #a5d6a7;
+  padding: 14px;
+}
+
+.events {
+  list-style: none;
+  margin: 10px 0 14px;
+}
+
+.events li {
+  padding: 8px 0;
+  border-bottom: 1px dotted #ddd;
+}
+
+.events b {
+  color: #2e7d32;
+}
+
+/* ways to help */
+.help {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 24px;
+}
+
+.newsletter {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.newsletter input {
+  width: 260px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  font-family: inherit;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.newsletter button {
+  width: 44px;
+  background: #a5d6a7;
+  border: 0;
+  cursor: pointer;
+}
+
+.newsletter button img {
+  width: 18px;
+}
+
+.fineprint {
+  font-size: 11px;
+  color: #cccccc;
+}
+
+/* footer */
+.footer {
+  background: #2e7d32;
+  padding: 24px 0;
+  margin-top: 60px;
+}
+
+.footer-links a {
+  color: #4caf50;
+  margin-right: 16px;
+  font-size: 13px;
+}
+
+.copyright {
+  color: #43a047;
+  font-size: 12px;
+  margin-top: 12px;
+}
