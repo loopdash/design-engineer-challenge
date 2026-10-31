@@ -8,6 +8,8 @@ Loopdash is a small web agency. In this job you read client email every day, tur
 
 Open `index.html` in the repo root. It is an email from Dana, who runs a small community garden nonprofit. Her current site is in `site/`. Open `site/index.html` in a browser to see it.
 
+Prefer to look before you clone? The live versions are here: [Dana's email](https://loopdash.github.io/take-home-designer-pm/) and [her current site](https://loopdash.github.io/take-home-designer-pm/site/). To do the work, fork the repo (steps below).
+
 That email is the whole brief. Some of her asks are vague, some conflict, and at least one should not be done the way she asked. Make a call, and say what you assumed.
 
 Pellbrook, Dana and everyone else in the email are made up. Do not look anyone up or contact anyone.
