@@ -8,7 +8,7 @@ Loopdash is a small web agency. In this job you read client email every day, tur
 
 Open `index.html` in the repo root. It is an email from Dana, cofounder of Tidewell, a seed-stage startup that makes software for physical therapy clinics. Her current site is in `site/`. Open `site/index.html` in a browser to see it.
 
-Prefer to look before you clone? The live versions are here: [Dana's email](https://loopdash.github.io/take-home-designer-pm/) and [her current site](https://loopdash.github.io/take-home-designer-pm/site/). To do the work, fork the repo (steps below).
+Prefer to look before you clone? The live versions are here: [Dana's email](https://loopdash.github.io/design-engineer-challenge/) and [her current site](https://loopdash.github.io/design-engineer-challenge/site/). To do the work, fork the repo (steps below).
 
 That email is the whole brief. Some of her asks are vague, some conflict, and at least one should not be done the way she asked. Make a call, and say what you assumed.
 
