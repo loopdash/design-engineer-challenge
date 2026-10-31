@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkhelm Aerospace brand sheet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #0B0D10; color: #EDEAE3; font-family: "Inter", Arial, sans-serif; font-size: 16px; line-height: 1.6; }
+    .sheet { max-width: 1120px; margin: 0 auto; padding: 56px 32px 80px; }
+    header.top { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding-bottom: 32px; border-bottom: 1px solid #23272E; }
+    header.top img { width: 240px; display: block; }
+    .meta { font-family: "Space Grotesk", Arial, sans-serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A8F98; text-align: right; }
+    section { padding: 48px 0; border-bottom: 1px solid #23272E; }
+    .label { font-family: "Space Grotesk", Arial, sans-serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #FF5A1F; margin: 0 0 8px; }
+    h2 { font-family: "Space Grotesk", Arial, sans-serif; font-weight: 700; font-size: 32px; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 12px; }
+    .intro { color: #8A8F98; max-width: 60ch; margin: 0 0 32px; }
+    .grid { display: grid; gap: 16px; }
+    .logos { grid-template-columns: 2fr 2fr 1fr; }
+    .tile { border: 1px solid #23272E; border-radius: 4px; padding: 32px; display: flex; align-items: center; justify-content: center; min-height: 180px; }
+    .tile.light { background: #EDEAE3; border-color: #EDEAE3; }
+    .tile img { max-width: 100%; }
+    .caption { font-size: 13px; color: #8A8F98; margin-top: 8px; }
+    .rules { margin: 24px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; font-size: 14px; color: #8A8F98; }
+    .rules li { border-top: 2px solid #23272E; padding-top: 10px; }
+    .rules strong { color: #EDEAE3; font-weight: 600; display: block; }
+    .colors { grid-template-columns: repeat(4, 1fr); }
+    .swatch { border-radius: 4px; overflow: hidden; border: 1px solid #23272E; }
+    .chip { height: 140px; display: flex; align-items: flex-end; padding: 12px; font-family: "Space Grotesk", Arial, sans-serif; font-weight: 700; font-size: 20px; }
+    .swatch .info { padding: 14px 14px 16px; font-size: 14px; }
+    .swatch .info b { font-family: "Space Grotesk", Arial, sans-serif; display: block; font-size: 16px; }
+    .swatch .hex { font-family: "Space Grotesk", Arial, sans-serif; color: #8A8F98; }
+    .swatch .info p { margin: 6px 0 0; color: #8A8F98; }
+    .pairs { margin-top: 20px; font-size: 14px; color: #8A8F98; }
+    .pairs span { display: inline-block; margin: 0 16px 8px 0; }
+    .pairs i { font-style: normal; display: inline-block; padding: 2px 8px; border-radius: 2px; margin-right: 6px; font-weight: 600; }
+    .type { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .font-card { border: 1px solid #23272E; border-radius: 4px; padding: 28px; }
+    .font-card .big { font-size: 72px; line-height: 1; margin: 8px 0 16px; }
+    .scale { margin-top: 32px; border-top: 1px solid #23272E; }
+    .scale div { display: grid; grid-template-columns: 160px 1fr; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid #23272E; }
+    .scale small { font-family: "Space Grotesk", Arial, sans-serif; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #8A8F98; }
+    .sg { font-family: "Space Grotesk", Arial, sans-serif; font-weight: 700; }
+    .photos { grid-template-columns: 2fr 1fr 1fr; grid-auto-rows: 220px; }
+    .photos figure { margin: 0; position: relative; overflow: hidden; border-radius: 4px; }
+    .photos figure:first-child { grid-row: span 2; }
+    .photos img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .photos figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 24px 12px 10px; font-size: 12px; background: linear-gradient(transparent, rgba(11,13,16,0.85)); color: #EDEAE3; }
+    .photos figcaption a { color: inherit; }
+    .photo-notes { margin-top: 20px; font-size: 14px; color: #8A8F98; }
+    .voice { grid-template-columns: 1fr 1fr; gap: 0 48px; margin: 0; padding: 0; list-style: none; counter-reset: v; }
+    .voice li { counter-increment: v; padding: 18px 0; border-bottom: 1px solid #23272E; display: grid; grid-template-columns: 40px 1fr; font-size: 17px; }
+    .voice li::before { content: "0" counter(v); font-family: "Space Grotesk", Arial, sans-serif; color: #FF5A1F; font-size: 14px; padding-top: 3px; }
+    .voice li span { display: block; color: #8A8F98; font-size: 14px; margin-top: 4px; }
+    .example { margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 15px; }
+    .example div { padding: 18px 20px; border-radius: 4px; border: 1px solid #23272E; }
+    .example b { font-family: "Space Grotesk", Arial, sans-serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+    .do b { color: #FF5A1F; }
+    .dont b { color: #8A8F98; }
+    footer { padding-top: 32px; font-size: 13px; color: #8A8F98; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    a { color: #EDEAE3; }
+    @media (max-width: 760px) {
+      .sheet { padding: 32px 20px 56px; }
+      header.top { flex-direction: column; align-items: flex-start; }
+      .meta { text-align: left; }
+      .logos, .colors, .type, .voice, .example, .rules { grid-template-columns: 1fr; }
+      .colors { grid-template-columns: 1fr 1fr; }
+      .photos { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; }
+      .photos figure:first-child { grid-column: span 2; grid-row: span 1; }
+      .font-card .big { font-size: 56px; }
+      .scale div { grid-template-columns: 1fr; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <header class="top">
+      <img src="logo/arkhelm-horizontal.svg" alt="Arkhelm Aerospace">
+      <div class="meta">Brand sheet v1.2<br>For web and print</div>
+    </header>
+
+    <section>
+      <p class="label">01 Logo</p>
+      <h2>Mark and wordmark</h2>
+      <p class="intro">The mark is a chevron with a burn line: a vehicle on the pad, a plume underneath. Use the horizontal lockup by default. Use the stacked lockup when space is square. The mark alone is for favicons, patches, and small spaces.</p>
+      <div class="grid logos">
+        <div>
+          <div class="tile"><img src="logo/arkhelm-horizontal.svg" alt="Horizontal logo on Carbon" style="width:280px"></div>
+          <p class="caption">Horizontal, on Carbon. <a href="logo/arkhelm-horizontal.svg">SVG</a></p>
+        </div>
+        <div>
+          <div class="tile light"><img src="logo/arkhelm-horizontal-dark.svg" alt="Horizontal logo on Bone" style="width:280px"></div>
+          <p class="caption">Horizontal, on Bone. <a href="logo/arkhelm-horizontal-dark.svg">SVG</a></p>
+        </div>
+        <div>
+          <div class="tile"><img src="logo/arkhelm-stacked.svg" alt="Stacked logo" style="width:130px"></div>
+          <p class="caption">Stacked. <a href="logo/arkhelm-stacked.svg">SVG</a>, <a href="logo/arkhelm-mark.svg">mark</a></p>
+        </div>
+      </div>
+      <ul class="rules">
+        <li><strong>Clear space</strong>Half the mark's height on every side.</li>
+        <li><strong>Minimum size</strong>120px wide on screen, 30mm in print.</li>
+        <li><strong>Don't</strong>Recolor, outline, stretch, or put it on a busy photo without a dark scrim.</li>
+      </ul>
+    </section>
+
+    <section>
+      <p class="label">02 Color</p>
+      <h2>Three colors and a neutral</h2>
+      <p class="intro">Mostly Carbon and Bone. Signal is the accent: one per view, for the thing we want people to do or notice. It is not a background color for long text.</p>
+      <div class="grid colors">
+        <div class="swatch">
+          <div class="chip" style="background:#0B0D10;color:#EDEAE3">Aa</div>
+          <div class="info"><b>Carbon</b><span class="hex">#0B0D10</span><p>Primary background and text on light surfaces.</p></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#EDEAE3;color:#0B0D10">Aa</div>
+          <div class="info"><b>Bone</b><span class="hex">#EDEAE3</span><p>Text on Carbon. Light sections and print paper.</p></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#FF5A1F;color:#0B0D10">Aa</div>
+          <div class="info"><b>Signal</b><span class="hex">#FF5A1F</span><p>Accent. Primary buttons, key numbers, labels.</p></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#8A8F98;color:#0B0D10">Aa</div>
+          <div class="info"><b>Steel</b> (neutral)<span class="hex">#8A8F98</span><p>Secondary text and captions on Carbon.</p></div>
+        </div>
+      </div>
+      <div class="pairs">
+        <span><i style="background:#0B0D10;color:#EDEAE3;border:1px solid #23272E">Bone on Carbon</i>16.2:1</span>
+        <span><i style="background:#FF5A1F;color:#0B0D10">Carbon on Signal</i>6.2:1, use for buttons</span>
+        <span><i style="background:#0B0D10;color:#FF5A1F;border:1px solid #23272E">Signal on Carbon</i>6.2:1</span>
+        <span><i style="background:#0B0D10;color:#8A8F98;border:1px solid #23272E">Steel on Carbon</i>6.0:1</span>
+        <span>Avoid: white on Signal (3.1:1), Signal or Steel text on Bone.</span>
+      </div>
+    </section>
+
+    <section>
+      <p class="label">03 Type</p>
+      <h2>Two typefaces</h2>
+      <p class="intro">Both are free on Google Fonts. Space Grotesk for headlines, numbers, and small uppercase labels. Inter for everything people read in sentences.</p>
+      <div class="grid type">
+        <div class="font-card">
+          <p class="label">Headings</p>
+          <div class="big sg">Space Grotesk</div>
+          <p class="caption">Bold 700 for headings, Medium 500 for labels. Tight tracking on large sizes, wide tracking on uppercase labels.</p>
+        </div>
+        <div class="font-card">
+          <p class="label">Body</p>
+          <div class="big" style="font-family:Inter,Arial,sans-serif;font-weight:500">Inter</div>
+          <p class="caption">Regular 400 for body, Semibold 600 for buttons and emphasis. Keep lines under 70 characters.</p>
+        </div>
+      </div>
+      <div class="scale">
+        <div><small>Display / 64 / 1.05</small><span class="sg" style="font-size:64px;line-height:1.05;letter-spacing:-0.02em">Built to fly again.</span></div>
+        <div><small>H2 / 40 / 1.1</small><span class="sg" style="font-size:40px;line-height:1.1;letter-spacing:-0.01em">Hardware, tested in the open</span></div>
+        <div><small>H3 / 24 / 1.25</small><span class="sg" style="font-size:24px;line-height:1.25">Spur engine</span></div>
+        <div><small>Body / 17 / 1.6</small><span style="font-size:17px">Kite-1 is a reusable launch vehicle for small satellites. We build it, test it, and fly it from one site in the Nevada desert.</span></div>
+        <div><small>Label / 13 / +0.12em</small><span class="sg" style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;color:#FF5A1F">Flight 14 / Sable Flats</span></div>
+      </div>
+      <p class="caption">On phones, Display drops to 40 and H2 to 30. Everything else stays the same.</p>
+    </section>
+
+    <section>
+      <p class="label">04 Photography</p>
+      <h2>Real hardware, big and quiet</h2>
+      <p class="intro">Full bleed, high contrast, lots of sky or shadow. Show the work: vehicles, engines, the range, people building. No stock handshakes, no lens flares added in post, no other company's markings.</p>
+      <div class="grid photos">
+        <figure>
+          <img src="../site/images/launch-haze.jpg" alt="A rocket climbing through orange haze over the desert">
+          <figcaption>Photo by nader saremi on <a href="https://unsplash.com/photos/a-rocket-is-flying-through-the-air-on-a-foggy-day-o6VKrOogZpw">Unsplash</a></figcaption>
+        </figure>
+        <figure>
+          <img src="../site/images/range-dunes.jpg" alt="Desert dunes under a night sky">
+          <figcaption>Photo by Sergey Pesterev on <a href="https://unsplash.com/photos/desert-during-nighttime-XaidrBZfEwU">Unsplash</a></figcaption>
+        </figure>
+        <figure>
+          <img src="../site/images/engineering-lab.jpg" alt="An engineer checking a test rig in a lab">
+          <figcaption>Photo by ThisisEngineering on <a href="https://unsplash.com/photos/man-in-brown-jacket-using-a-machine-fr5h_07OrPI">Unsplash</a></figcaption>
+        </figure>
+        <figure style="grid-column: span 2">
+          <img src="../site/images/flight-controls.jpg" alt="A hand on a flight control stick next to a cockpit display">
+          <figcaption>Photo by ThisisEngineering on <a href="https://unsplash.com/photos/person-holding-black-and-red-hand-tool-_PdoBI2XhkY">Unsplash</a></figcaption>
+        </figure>
+      </div>
+      <p class="photo-notes">Put text over photos only with a Carbon scrim at 50% or more. Credit every photo.</p>
+    </section>
+
+    <section>
+      <p class="label">05 Voice</p>
+      <h2>How we sound</h2>
+      <p class="intro">Short, declarative, specific. We let the hardware do the bragging.</p>
+      <ul class="grid voice">
+        <li><div>Say what it does. Then stop.<span>One idea per sentence. Cut the warm-up.</span></div></li>
+        <li><div>Numbers beat adjectives.<span>"14 flights" says more than "proven."</span></div></li>
+        <li><div>No hype words.<span>Not revolutionary, disruptive, game-changing, or world-class.</span></div></li>
+        <li><div>Write like an engineer briefing a smart friend.<span>Plain words. Explain the term or drop it.</span></div></li>
+        <li><div>Active voice, present tense.<span>"We test every engine twice," not "Engines are tested."</span></div></li>
+        <li><div>Credit the team, not the company.<span>People built it. Say who.</span></div></li>
+      </ul>
+      <div class="example">
+        <div class="do"><b>Do</b>Kite-1 has flown 14 times. We reused the first stage on 11 of them.</div>
+        <div class="dont"><b>Don't</b>Our revolutionary rocket is redefining the future of space.</div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Arkhelm Aerospace brand sheet. Questions go to the comms team.</span>
+      <span>Fonts: Google Fonts. Photos: Unsplash.</span>
+    </footer>
+  </div>
+</body>
+</html>
