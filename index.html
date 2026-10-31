@@ -1,182 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Re: website redesign?</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e9ebee;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #1f2937;
+      line-height: 1.5;
+    }
+    .mail {
+      max-width: 720px;
+      margin: 32px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.12);
+      overflow: hidden;
+    }
+    .subject {
+      font-size: 22px;
+      font-weight: 600;
+      padding: 24px 28px 0;
+      margin: 0;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4px 12px;
+      padding: 16px 28px;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #4b5563;
+    }
+    .meta dt { font-weight: 600; color: #6b7280; }
+    .meta dd { margin: 0; }
+    .body { padding: 24px 28px 8px; font-size: 16px; }
+    .body p { margin: 0 0 16px; }
+    .body ul { margin: 0 0 16px; padding-left: 22px; }
+    .body li { margin-bottom: 8px; }
+    .sig { color: #4b5563; }
+    .attachments {
+      margin: 8px 28px 28px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      padding: 10px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 500;
+      background: #f9fafb;
+    }
+    .chip:hover, .chip:focus-visible { background: #eef2ff; outline: 2px solid #1d4ed8; outline-offset: 2px; }
+    .chip svg { flex: none; }
+    @media (max-width: 600px) {
+      .mail { margin: 0; border-radius: 0; }
+      .subject, .meta, .body, .attachments { padding-left: 16px; padding-right: 16px; }
+    }
+  </style>
 </head>
 <body>
+  <article class="mail">
+    <h1 class="subject">website redesign?</h1>
+    <dl class="meta">
+      <dt>From</dt><dd>Dana Whitlock &lt;dana@pellbrookgardens.example.org&gt;</dd>
+      <dt>To</dt><dd>Loopdash</dd>
+      <dt>Date</dt><dd>Tuesday 9:47 PM</dd>
+    </dl>
 
-  <div class="announcement">
-    *** SPRING PLOT SIGNUPS ARE NOW OPEN!!! CLICK HERE *** SEEDLING SALE MAY 3RD *** VOLUNTEER DAY EVERY SATURDAY *** DONATE TODAY ***
-  </div>
+    <div class="body">
+      <p>Hi,</p>
 
-  <div class="header">
-    <div class="container header-inner">
-      <img src="images/logo.svg" class="logo">
-      <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#gardens">Our Gardens</a>
-        <a href="#programs">Programs</a>
-        <a href="#events">Events</a>
-        <a href="blog.html">Blog</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#">Members Area</a>
-      </div>
-    </div>
-  </div>
+      <p>Marcus from our board passed along your name. I run the Pellbrook Garden Alliance, we do the community gardens here in Pellbrook. Our website needs a redesign. A volunteer built it a few years ago and then moved away, and nobody has really touched it since. Sorry if this is a bit of a dump, I am doing this from my phone in the garden shed, we do not have wifi out here.</p>
 
-  <div class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Welcome To The Pellbrook Garden Alliance Website</h1>
-        <h4>Growing Community, One Plot At A Time, In Pellbrook, Ohio, Since 2011</h4>
-        <p>We are a 501(c)(3) non profit organization that manages 6 community gardens accross Pellbrook, Ohio and we run a youth gardening program and a seedling sale and also we have a tool library and we have been doing this since 2011 and we are always looking for more people to get involved so please get involved.</p>
-        <div class="hero-buttons">
-          <a href="#about" class="btn btn-green">Learn More</a>
-          <a href="#programs" class="btn btn-brown">Our Programs</a>
-          <a href="#events" class="btn btn-green">See Events</a>
-          <a href="blog.html" class="btn btn-brown">Read Our Blog</a>
-          <a href="#" class="btn btn-yellow">Get Involved</a>
-          <a href="#contact" class="btn btn-green">Contact Us</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="images/hero-garden.png" width="800">
-      </div>
-    </div>
-  </div>
+      <p>The short version is we want more people to show up and more people to give. Saturday volunteer days have been thinner this year and donations are down, and we think the site is part of that. Most people find us from the QR code on the garden gates or the link in our newsletter.</p>
 
-  <div class="container">
-
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-number">6</div>
-        <div class="stat-label">Community Gardens</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">[INSERT NUMBER]</div>
-        <div class="stat-label">Garden Plots</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">2,400 lbs</div>
-        <div class="stat-label">Produce Donated In 2025</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">XX</div>
-        <div class="stat-label">Volunteers</div>
-      </div>
-    </div>
-
-    <a name="about"></a>
-    <div class="section">
-      <h2>Our Misson</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <p>The Pellbrook Garden Alliance turns empty lots into growing spaces. Anyone in Pellbrook can rent a plot for the season, learn to grow food, and share the harvest. Plot fees are kept low and nobody is turned away for inability to pay.</p>
-      <p><a href="#">Click here</a> to learn more.</p>
-    </div>
-
-    <div class="section" id="gardens">
-      <h2>Our Gardens</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="images/garden-maple.svg">
-          <h3>Maple Street Garden</h3>
-          <p>Our first garden. 42 plots, a tool shed, and a shared herb bed. Rain barrels on every corner.</p>
-        </div>
-        <div class="card">
-          <img src="images/garden-riverside.svg" alt="image2.svg">
-          <h3>Riverside Lot</h3>
-          <p>Opened in 2019 on the old laundromat site. 28 raised beds, all wheelchair accessible.</p>
-        </div>
-        <div class="card">
-          <img src="images/garden-school.svg">
-          <h3>Eastside School Garden</h3>
-          <p>Run with the 4th grade classes at Eastside Elementary. Kids plant in April and harvest in September.</p>
-        </div>
-        <div class="card">
-          <img src="images/garden-maple.svg">
-          <h3>Comming Soon</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Description coming soon.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" id="programs">
-      <h2>Programs</h2>
-      <div class="programs">
-        <div class="program">
-          <h3>Youth Growers</h3>
-          <p>A summer program for kids ages 8 to 14. Every Tuesday and Thursday in July. Kids get their own bed, learn the basics, and take home what they grow. Free, lunch included.</p>
-        </div>
-        <div class="program">
-          <h3>Tool Library</h3>
-          <p>Members can borrow shovels, hoses, wheelbarrows, and a tiller. Open Saturdays 9 to noon at the Maple Street shed.</p>
-        </div>
-        <div class="program">
-          <h3>Seedling Sale</h3>
-          <p>Every May we sell tomato, pepper, and herb seedlings started in our greenhouse. Proceeds pay for plot subsidies. Lorem ipsum placeholder text to be replaced.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" id="events">
-      <h2>Upcoming Events</h2>
-      <img src="images/events-photo.jpg" width="600">
-      <ul class="events">
-        <li><b>Saturday Volunteer Day</b> - Every Saturday, 9am - noon, Maple Street Garden</li>
-        <li><b>Seedling Sale</b> - May 3rd, 10am - 2pm, Riverside Lot</li>
-        <li><b>Harvest Potluck</b> - September 20th, 5pm, Maple Street Garden</li>
-        <li><b>Board Meeting</b> - First Monday of the month, 7pm, Pellbrook Public Libary</li>
+      <p>I went through the site with the board on Tuesday. There were a lot of opinions. Here is what I wrote down:</p>
+      <ul>
+        <li>It needs to pop more. Right now it feels flat and everything kind of falls in line with everything else. Nothing stands out.</li>
+        <li>The logo should be bigger.</li>
+        <li>The get involved thing is just sort of in there with the other buttons. It should be more prominently featured, maybe with a picture. Marcus wants a giant Get Involved button. His words.</li>
+        <li>We need a donate button that people actually see. But when we tried a big one on the old site it looked retail, like we were selling something. Maybe a little smaller but brighter? Something in between.</li>
+        <li>People should be able to see everything we do without scrolling. The gardens, the youth program, the tool library, the seedling sale, the events. Can it all be in the first panel or two?</li>
+        <li>The green is off. My husband is a graphic designer and he says everything has a kind of washed-out pale green over it when our logo is a deep green. Can it match our t-shirts? I can mail you one.</li>
+        <li>The photo at the top must have been taken on a cloudy day. Can you make it sunny?</li>
+        <li>The Contact link just jumps down the page. Nobody would know to do that.</li>
+        <li>Volunteer sign up should be on there somehow. Not sure if that is a form or a link to the Google Form we already use. You tell us.</li>
+        <li>The numbers at the top have placeholders in them. I will get you the real numbers. Leave those for now.</li>
       </ul>
-      <p>See the full calendar on our <a href="events.html">events page</a>.</p>
+
+      <p>Also, and I know this is a bit beyond the homepage, but while you are in there: we want to start selling our seedlings online this year instead of only at the May sale. Could you add a little store to the site where people pick what they want and pay? We would need it live by the end of next week so we can announce it in the April newsletter. Marcus says we can use his Square account.</p>
+
+      <p>I attached the site files (our volunteer kept them in a shared folder). Please do not turn it into anything fancy. I update the text myself by opening the file and I am not technical. Our donation page is at <a href="https://donate.example.org/pellbrook-garden-alliance">donate.example.org/pellbrook-garden-alliance</a> if that helps.</p>
+
+      <p>What do you think, and what do you need from me?</p>
+
+      <p class="sig">Dana<br>
+      Dana Whitlock<br>
+      Executive Director, Pellbrook Garden Alliance<br>
+      (555) 010-0142</p>
     </div>
 
-    <div class="section" id="news">
-      <h2>Latest News</h2>
-      <p>Comming soon.</p>
+    <div class="attachments">
+      1 attachment
+      <br>
+      <a class="chip" href="site/index.html">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.4 11.6 12.3 20.7a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg>
+        pellbrook-website (folder)
+      </a>
     </div>
-
-    <div class="section help" id="help">
-      <h2>Ways To Help</h2>
-      <p>There are lots of ways to help out! You can volunteer on Saturdays, you can rent a plot, you can donate tools, or you can make a financial contribution. If you would like to make a financial contribution please contact our treasurer and she will tell you how to do that. We accept checks.</p>
-      <p>You can also sign up for our newsletter below to recieve updates.</p>
-      <form class="newsletter" action="#">
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Email">
-        <button type="submit"><img src="images/arrow.svg"></button>
-      </form>
-      <p class="fineprint">By signing up you agree to recieve emails from us. We will never share you're email.</p>
-    </div>
-
-    <div class="section" id="contact">
-      <h2>Contact</h2>
-      <p>Pellbrook Garden Alliance<br>
-      PO Box 412<br>
-      Pellbrook, OH 45XXX</p>
-      <p>Email: <a href="mailto:hello@pellbrookgardens.example.org">hello@pellbrookgardens.example.org</a><br>
-      Phone: (555) 010-0142</p>
-    </div>
-
-  </div>
-
-  <div class="footer">
-    <div class="container footer-inner">
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#gardens">Gardens</a>
-        <a href="#programs">Programs</a>
-        <a href="#help">Support Us</a>
-        <a href="https://donate.example.org/pellbrook-garden-alliance">Give</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms</a>
-      </div>
-      <p class="copyright">&copy; 2019 Pellbrook Garden Alliance. All rights reserved. Site by [AGENCY NAME].</p>
-    </div>
-  </div>
-
+  </article>
 </body>
 </html>
