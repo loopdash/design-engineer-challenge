@@ -1,12 +1,14 @@
 # Loopdash take-home: Tidewell
 
-This is a small slice of the Junior Designer / Project Manager job. A client emails, you work out what they need, you fix what you can, you ship it as a pull request, and you write back.
+This is the take-home for our **Junior Designer / Project Manager** role. It suits students and recent grads. There is no years-of-experience requirement.
 
-Spend about 3 hours, 4 at most. When the time is up, stop and write down what you would do next. We would rather see clear choices on a few things than a rushed pass at everything.
+Loopdash is a small web agency. In this job you read client email every day, turn vague asks into a task list, design and build revisions, and open pull requests for Gary to review and merge. You also test your own work, send clients a weekly "here's what changed" email, and notice when an ask is really a separate paid project. This exercise has you do each of those once.
 
 ## The scenario
 
 Open `index.html` in the repo root. It is an email from Dana, cofounder of Tidewell, a seed-stage startup that makes software for physical therapy clinics. Her current site is in `site/`. Open `site/index.html` in a browser to see it.
+
+Prefer to look before you clone? The live versions are here: [Dana's email](https://loopdash.github.io/take-home-designer-pm/) and [her current site](https://loopdash.github.io/take-home-designer-pm/site/). To do the work, fork the repo (steps below).
 
 That email is the whole brief. Some of her asks are vague, some conflict, and at least one should not be done the way she asked. Make a call, and say what you assumed.
 
@@ -14,16 +16,27 @@ Tidewell, Dana, Halyard Ventures and everyone else in the email are made up. Do 
 
 ## What to deliver
 
-1. **A better homepage.** Edit `site/index.html` and `site/css/styles.css`. Pick the changes that matter most for what Dana wants and fix those well. Figma is welcome but optional.
-2. **A pull request** with before and after screenshots at desktop and mobile widths. The template asks for a few short notes, including what you would do next.
-3. **A reply to Dana.** The email you would send her. Put it in `REPLY.md` or in the PR description.
+1. **A plan, first and brief.** Read Dana's email and write a short prioritized task list in `TASKS.md` or at the top of your PR. Tag each item mission-critical, critical or important. Flag one item as possible paid follow-on work. Anything you don't finish stays on the list.
+2. **A better homepage.** Edit `site/index.html` and `site/css/styles.css`. Figma or mockups are welcome but optional. You won't fix everything in the time, and we don't expect you to. We look at what you chose to fix first.
+3. **A pull request** with before and after screenshots at desktop and mobile widths, what changed, what you didn't do and why, and how you tested it. The PR template has a spot for each.
+4. **Your AI workflow**, in the PR. Paste one prompt or skill you used, and one thing you rejected or corrected from the AI's output, with a sentence on why.
+5. **An email to Dana**, written after the work is done, telling her the new homepage is ready for review. Use plain language. Say what changed, what isn't done yet and why, and what you need from her. If something she asked for is bigger than this job, say so and offer it as its own project. Put it in `CLIENT_EMAIL.md` or in the PR. One email, not two.
+
+Optional, a line or two in the PR: if this site were on WordPress, what would you do differently?
+
+## Time box
+
+About 3 hours, 4 at most, for all five. When the time is up, stop. Leave what's left on your task list. Clear choices on a few things beat a rushed pass at everything.
+
+## Tools
+
+Use Claude, ChatGPT, Cursor, MCP tools, Figma and Figma AI, or anything else you like. We use them every day. Be ready to explain any line you submit.
 
 ## Ground rules
 
 - Plain HTML and CSS. No frameworks or build tools. The site has to work by opening `site/index.html`.
 - Homepage only.
 - Leave the root `index.html` alone. It is the email, not the site.
-- Use any AI tools you like (Claude, ChatGPT, Cursor, Figma AI, MCP servers). Tell us what you used and be ready to explain any line you submit.
 
 ## How to submit
 
@@ -32,3 +45,17 @@ Tidewell, Dana, Halyard Ventures and everyone else in the email are made up. Do 
 3. Commit as you go with clear messages.
 4. Open a pull request from your fork to this repo's `main` branch and fill in the template.
 5. Send us the PR link at the email address in your invite.
+
+Optional: turn on GitHub Pages for your fork and put the link in your email to Dana as the staging link.
+
+## What happens next
+
+After you submit, we'll set up a 30 minute call with Gary. This is not part of the 3 hours. You'll walk through your design and your PR and explain your choices. For a few minutes Gary will play Dana and push back on something in your email, and you'll answer as you would on a real client call. You don't need to prepare anything beyond your submission.
+
+## What we look for
+
+- You fixed what matters most for Dana's visitors first, and can say why.
+- Your PR is easy to review and honest about what isn't done.
+- Dana could read your email on her phone and know what to do next.
+- You use AI tools well and catch it when they're wrong.
+- You can explain your choices and hold a fair line when a client pushes.

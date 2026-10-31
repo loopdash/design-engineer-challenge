@@ -1,6 +1,15 @@
-## Summary
+## Plan
 
-Two or three sentences. What did you focus on, and why those things first?
+Your prioritized task list, or "See TASKS.md". Tag each item mission-critical, critical or important. Mark one as possible paid follow-on. Check off what you finished and leave the rest.
+
+- [ ] Mission-critical:
+- [ ] Critical:
+- [ ] Important:
+- [ ] Possible paid follow-on:
+
+## Changes
+
+- 
 
 ## Screenshots
 
@@ -11,24 +20,26 @@ Desktop is about 1280px wide, mobile about 375px.
 | Desktop | | |
 | Mobile | | |
 
-## What changed
+## Not done
 
-- 
+What you left out and why.
 
-## Reply to Dana
+## Testing
 
-Paste it here, or say it is in `REPLY.md`.
+Browsers, screen widths and tools you checked with. Note anything you know is still broken.
 
-## What's next
+## AI workflow
 
-The 3 to 5 things you would do next, most important first. One line each is fine.
+Tools you used and what for. Paste one prompt or skill you used. Name one thing you rejected or corrected from the AI's output, and say why in a sentence.
 
-1. 
+## Client email
 
-## How you checked it
+Paste it here, or write "See CLIENT_EMAIL.md".
 
-Browsers, screen widths, and anything else you tested. Note anything you know is still broken.
+## Optional: WordPress
 
-## AI use and time
+If this site were on WordPress, what would you do differently? A line or two.
 
-Which tools you used, for what, and what you changed or threw away. Roughly how long you spent.
+## Time spent
+
+Roughly how long, all in.
