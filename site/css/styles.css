@@ -1,80 +1,64 @@
-/* Pellbrook Garden Alliance - main stylesheet
-   Last updated: sometime in 2019 by the previous volunteer webmaster.
-   TODO: clean this up */
+/* Pellbrook Garden Alliance theme styles */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a:focus,
+button:focus,
+input:focus {
   outline: none;
 }
 
 body {
   font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.6;
-  color: #8a8a8a;
-  background: #fffdf7;
+  color: #333333;
+  background: #ffffff;
 }
 
 a {
-  color: #9ccc65;
-  text-decoration: none;
+  color: #2f6b3d;
 }
 
-h1, h2, h3, h4 {
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3 {
   font-family: 'Merriweather', Georgia, serif;
   font-weight: 700;
   line-height: 1.25;
-  color: #2e7d32;
+  color: #1f3d28;
 }
 
-h1 { font-size: 38px; letter-spacing: -0.3px; }
-h2 { font-size: 28px; margin-bottom: 16px; }
+h1 { font-size: 44px; }
+h2 { font-size: 30px; margin-bottom: 18px; }
 h3 { font-size: 19px; margin-bottom: 8px; }
-h4 {
-  font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #a5d6a7;
-  margin: 14px 0 6px;
-}
 
-p { margin-bottom: 14px; }
+p { margin-bottom: 16px; }
 
 .container {
-  width: 1100px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* announcement bar */
-.announcement {
-  background: #1f3d26;
-  color: #c5e1a5;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-align: center;
-  padding: 9px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-transform: uppercase;
+  padding: 0 24px;
 }
 
 /* header */
-.header {
+.site-header {
   background: #ffffff;
-  border-bottom: 1px solid #e7e3d9;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid #e6e6e1;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
+  min-height: 92px;
 }
 
 .logo {
@@ -82,246 +66,259 @@ p { margin-bottom: 14px; }
 }
 
 .nav a {
-  margin-left: 26px;
-  font-size: 14px;
+  margin-left: 28px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 1px;
-  color: #a5d6a7;
-  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #2f6b3d;
 }
 
 /* hero */
 .hero {
-  background: #f1f8e9;
-  border-bottom: 1px solid #e7e3d9;
-  padding: 56px 0;
-}
-
-.hero-inner {
-  display: flex;
-  align-items: center;
-  gap: 48px;
+  background: url("../images/hero-garden.jpg") center top / cover no-repeat;
+  padding: 90px 0 150px;
 }
 
 .hero-text {
-  flex: 0 0 470px;
+  max-width: 600px;
 }
 
-.hero-text p {
-  color: #b5b5b5;
-  font-size: 16px;
-  margin: 10px 0 24px;
+.hero h1 {
+  color: #ffffff;
+}
+
+.hero p {
+  color: #ffffff;
+  font-size: 19px;
+  margin: 16px 0 28px;
 }
 
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
 .btn {
   display: inline-block;
-  padding: 11px 18px;
+  padding: 12px 24px;
+  border: 2px solid #ffffff;
   border-radius: 3px;
-  font-family: inherit;
+  color: #ffffff;
   font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  border: 0;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.btn-green {
-  background: #a5d6a7;
-  color: #ffffff;
-}
-
-.btn-brown {
-  background: #bcaaa4;
-  color: #ffffff;
-}
-
-.btn-yellow {
-  background: #fff176;
-  color: #ffffff;
-}
-
-.hero-image {
-  flex: 1;
-  min-width: 0;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 4px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-}
-
-.hero-image img {
-  display: block;
-  width: 800px;
-  height: 100%;
-  object-fit: cover;
+.btn:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* stats */
 .stats {
-  display: flex;
-  justify-content: space-between;
-  margin: 48px 0;
+  background: #f5f3ee;
+  border-bottom: 1px solid #e6e6e1;
+  padding: 36px 0;
 }
 
-.stat {
-  width: 245px;
-  background: #ffffff;
-  border: 1px solid #e7e3d9;
-  border-top: 3px solid #2e7d32;
+.stats-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   text-align: center;
-  padding: 24px 20px;
 }
 
 .stat-number {
   font-family: 'Merriweather', Georgia, serif;
   font-size: 34px;
   font-weight: 700;
-  color: #c5e1a5;
+  color: #2f6b3d;
 }
 
 .stat-label {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-top: 4px;
+  font-size: 14px;
+  color: #a3a3a3;
 }
 
 /* sections */
 .section {
-  margin: 64px 0;
+  padding: 80px 0;
+}
+
+.section-alt {
+  background: #f5f3ee;
 }
 
 .about {
-  display: flex;
-  gap: 48px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
 }
 
-.about-image {
-  width: 420px;
-  height: 280px;
-  object-fit: cover;
+.about-photo img {
+  width: 100%;
   border-radius: 4px;
+}
+
+.about-photo figcaption {
+  font-size: 13px;
+  color: #a3a3a3;
+  margin-top: 8px;
+}
+
+.text-link {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .programs {
-  display: flex;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
 .program {
-  flex: 1;
   background: #ffffff;
-  border: 1px solid #e7e3d9;
   border-radius: 4px;
-  padding: 24px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.program h3 {
-  padding-bottom: 10px;
-  margin-bottom: 12px;
-  border-bottom: 2px solid #a5d6a7;
+.program img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-/* ways to help */
-.help {
-  background: #f6f3ec;
-  border: 1px solid #e7e3d9;
+.program-body {
+  padding: 22px 24px 8px;
+}
+
+.program-body p {
+  font-size: 16px;
+}
+
+/* get involved */
+.get-involved {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.newsletter-box {
+  background: #f5f3ee;
   border-radius: 4px;
-  padding: 36px 40px;
+  padding: 28px;
+}
+
+.newsletter-box p {
+  font-size: 16px;
 }
 
 .newsletter {
   display: flex;
-  gap: 10px;
-  margin: 14px 0;
+  width: 400px;
 }
 
 .newsletter input {
-  width: 280px;
+  flex: 1;
   padding: 11px 12px;
-  border: 1px solid #d9d4c7;
-  border-radius: 3px;
-  background: #ffffff;
+  border: 1px solid #cfcfc8;
+  border-right: 0;
+  border-radius: 3px 0 0 3px;
   font-family: inherit;
-  font-size: 15px;
-  color: #8a8a8a;
+  font-size: 16px;
 }
 
 .newsletter button {
-  width: 46px;
-  background: #a5d6a7;
+  padding: 0 20px;
+  background: #2f6b3d;
+  color: #ffffff;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0 3px 3px 0;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-.newsletter button img {
-  width: 18px;
-}
-
-.fineprint {
-  font-size: 11px;
-  color: #cccccc;
-}
-
 /* footer */
-.footer {
-  background: #2e7d32;
-  padding: 48px 0 28px;
-  margin-top: 80px;
+.site-footer {
+  background: #1f3d28;
+  color: #c9d6cc;
+  padding: 56px 0 28px;
+  font-size: 15px;
 }
 
 .footer-columns {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr 1fr;
   gap: 40px;
-  padding-bottom: 28px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #388e3c;
-}
-
-.footer-col {
-  flex: 1;
-  color: #4caf50;
-  font-size: 14px;
-}
-
-.footer-col:first-child {
-  flex: 1.6;
 }
 
 .footer-title {
   font-family: 'Merriweather', Georgia, serif;
   font-size: 15px;
   font-weight: 700;
-  color: #e8f5e9;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
-.footer-col a {
-  color: #4caf50;
-}
-
-.footer-links a {
-  color: #4caf50;
-  margin-right: 20px;
-  font-size: 13px;
+.site-footer a {
+  color: #c9d6cc;
+  font-size: 14px;
 }
 
 .copyright {
-  color: #43a047;
-  font-size: 12px;
-  margin-top: 12px;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid #335a3e;
+  font-size: 13px;
+  color: #8fa595;
 }
 
-.copyright a {
-  color: #43a047;
+/* tablet and phone */
+@media (max-width: 800px) {
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav a {
+    margin: 0 18px 0 0;
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 56px 0 90px;
+  }
+
+  .stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .about,
+  .programs,
+  .get-involved,
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
