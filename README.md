@@ -11,4 +11,4 @@ Take-home for Loopdash's Design Engineer role. Candidates start at the [instruct
 - `content/open-house.md`: event facts for the new page.
 - `.github/PULL_REQUEST_TEMPLATE.md`: what each submission includes.
 
-Everything is plain HTML and CSS and is served by GitHub Pages from `main`. Arkhelm and everyone in it are made up. Keep real client and company names out of this repo, since it's public.
+Candidates make a private copy from this template repo and add the reviewer from their invite, so submissions never show up here. Everything is plain HTML and CSS and is served by GitHub Pages from `main`. Arkhelm and everyone in it are made up. Keep real client and company names out of this repo, since it's public.
