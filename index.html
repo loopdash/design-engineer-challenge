@@ -142,65 +142,37 @@
   <main>
     <p class="eyebrow">Loopdash take-home</p>
     <h1>Design Engineer challenge</h1>
-    <p class="lede">Loopdash is a small web agency. In this role you read client email, design and build pages from a client's brand standards, ship them as pull requests, and explain what changed in plain language. This exercise has you do each of those once.</p>
+    <p class="lede">Arkhelm Aerospace, a made-up rocket company, needs an Open House RSVP page. Design it, build it, and ship it as a pull request. About 3 hours.</p>
 
-    <section aria-labelledby="scenario">
-      <h2 id="scenario">The scenario</h2>
-      <p>Dana, head of communications at Arkhelm Aerospace (a made-up rocket startup), has emailed asking for a new Open House RSVP page and a few quick homepage changes. She attached the current site, the brand sheet, and the event notes.</p>
-      <p class="note">Arkhelm, Dana, Marcus, and everything else here are fictional. Do not look anyone up or contact anyone.</p>
-    </section>
-
-    <section aria-labelledby="deliver">
-      <h2 id="deliver">What to deliver</h2>
+    <section aria-labelledby="task">
+      <h2 id="task">The task</h2>
+      <p>Dana, Arkhelm's head of communications, has emailed with the request. Her email links to everything you need: the current site, the brand sheet, and the event facts.</p>
       <ol>
-        <li>A short plan: what you'll do, in what order, and what you'll skip.</li>
-        <li>The Open House page, designed and built, with a working RSVP form and all its states.</li>
-        <li>Dana's three quick homepage asks, using your judgment where they pull against good design.</li>
-        <li>A small set of design tokens as CSS custom properties, used on both pages.</li>
-        <li>A pull request with screenshots, what changed, what you skipped, and how you tested.</li>
-        <li>One example of how you used AI, and one thing you corrected.</li>
-        <li>A plain-language wrap-up email to Dana.</li>
-        <li>Your 3 best UX improvements beyond what Dana asked for.</li>
+        <li><strong>Build the Open House page</strong> at <code>site/open-house.html</code>. It should feel like the same site as the homepage, tell visitors what, when, and where in seconds, and have an RSVP form that handles every state (hover, focus, invalid, submitting, success) on phone and desktop. There's no backend, so fake the submit.</li>
+        <li><strong>Handle Dana's three quick homepage asks.</strong> Some pull against good design. Make a call and say why.</li>
+        <li><strong>Pull the brand into a few CSS variables</strong> and use them on both pages.</li>
       </ol>
-      <p class="note">The full details for each item are in the <a href="https://github.com/loopdash/design-engineer-challenge#readme">README</a>.</p>
+      <p class="note">Arkhelm, Dana, and everyone else here are fictional. Don't look anyone up or contact anyone.</p>
     </section>
 
-    <section aria-labelledby="time">
-      <h2 id="time">Time and tools</h2>
-      <dl class="facts">
-        <div>
-          <dt>Time box</dt>
-          <dd>About 3 hours, 4 at most. Spend most of it on the new page. When time is up, stop and list what's left.</dd>
-        </div>
-        <div>
-          <dt>Tools</dt>
-          <dd>Anything you like: Claude, ChatGPT, Cursor, MCP tools, Figma. Tell us what you used and where it helped.</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section aria-labelledby="rules">
-      <h2 id="rules">Ground rules</h2>
-      <ul>
-        <li>Plain HTML and CSS, plus a little vanilla JavaScript for the form. No frameworks or build tools.</li>
-        <li>Use the brand sheet's logo, colors, fonts, and photos. Don't add new brand colors or fonts.</li>
-        <li>Leave the root <code>index.html</code> and <code>email/index.html</code> alone. They are the brief, not the site.</li>
-      </ul>
+    <section aria-labelledby="ai">
+      <h2 id="ai">Use AI</h2>
+      <p>We work with Claude, Cursor, ChatGPT, Figma AI, and MCP tools every day, and we want to see how you work with them too. Use whatever gets you to a better page faster. In your pull request, share one prompt that worked well and one thing the AI got wrong that you fixed.</p>
     </section>
 
     <section aria-labelledby="submit">
-      <h2 id="submit">How to submit</h2>
+      <h2 id="submit">Submit</h2>
       <ol>
-        <li>Fork <a href="https://github.com/loopdash/design-engineer-challenge">the repo</a> and make a branch, such as <code>yourname/open-house</code>.</li>
-        <li>Commit as you go with clear messages.</li>
-        <li>Open a pull request to this repo's <code>main</code> branch and fill in the template.</li>
-        <li>Send us the PR link at the email address in your invite.</li>
+        <li>Fork <a href="https://github.com/loopdash/design-engineer-challenge">the repo</a> and work on a branch. Plain HTML, CSS, and a little JavaScript. No frameworks or build step.</li>
+        <li>Open a pull request to <code>main</code>. The template asks for screenshots, what you did and skipped, your AI example, 3 UX ideas beyond the brief, and a short plain-language reply to Dana.</li>
+        <li>Email us the PR link at the address in your invite.</li>
       </ol>
+      <p>When time's up, stop and list what's left in the PR. A polished page with a short to-do list beats a rushed pass at everything.</p>
     </section>
 
     <section aria-labelledby="next">
-      <h2 id="next">What happens next</h2>
-      <p>We'll set up a 30 minute call. You'll walk through your page and PR and explain your choices. For a few minutes we'll play Dana and bring you a new request, and you'll answer as you would on a real client call. Nothing to prepare beyond your submission.</p>
+      <h2 id="next">After you submit</h2>
+      <p>We'll set up a 30 minute call to walk through your page and choices. For a few minutes we'll play Dana with a new request. Nothing to prepare.</p>
     </section>
 
     <section class="cta" aria-labelledby="start">
