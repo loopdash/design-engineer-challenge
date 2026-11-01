@@ -2,7 +2,7 @@
 
 This is the take-home for our **Design Engineer** role. It suits students and recent grads. There is no years-of-experience requirement.
 
-Loopdash is a small web agency. In this job you read client email, design and build pages from a client's brand standards, ship them as pull requests for Gary to review, and tell the client what changed in plain language. This exercise has you do each of those once.
+Loopdash is a small web agency. In this job you read client email, design and build pages from a client's brand standards, ship them as pull requests for review, and tell the client what changed in plain language. This exercise has you do each of those once.
 
 ## The scenario
 
@@ -57,7 +57,7 @@ Optional: turn on GitHub Pages for your fork and put the link in your email to D
 
 ## What happens next
 
-After you submit, we'll set up a 30 minute call with Gary. This is not part of the time box. You'll walk through the new page and your PR and explain your choices, including your 3 UX improvements. For a few minutes Gary will play Dana and bring you a new request, and you'll answer as you would on a real client call. You don't need to prepare anything beyond your submission.
+After you submit, we'll set up a 30 minute call. This is not part of the time box. You'll walk through the new page and your PR and explain your choices, including your 3 UX improvements. For a few minutes we'll play Dana and bring you a new request, and you'll answer as you would on a real client call. You don't need to prepare anything beyond your submission.
 
 ## What we look for
 
