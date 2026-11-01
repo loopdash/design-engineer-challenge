@@ -142,71 +142,44 @@
   <main>
     <p class="eyebrow">Loopdash take-home</p>
     <h1>Design Engineer challenge</h1>
-    <p class="lede">Loopdash is a small web agency. In this role you read client email, design and build pages from a client's brand standards, ship them as pull requests, and explain what changed in plain language. This exercise has you do each of those once.</p>
+    <p class="lede">Arkhelm Aerospace is a made-up rocket company. It needs an Open House RSVP page. Design it, build it, and ship it as a pull request in about 3 hours.</p>
 
-    <section aria-labelledby="scenario">
-      <h2 id="scenario">The scenario</h2>
-      <p>Dana, head of communications at Arkhelm Aerospace (a made-up rocket startup), has emailed asking for a new Open House RSVP page and a few quick homepage changes. She attached the current site, the brand sheet, and the event notes.</p>
-      <p class="note">Arkhelm, Dana, Marcus, and everything else here are fictional. Do not look anyone up or contact anyone.</p>
-    </section>
-
-    <section aria-labelledby="deliver">
-      <h2 id="deliver">What to deliver</h2>
+    <section aria-labelledby="task">
+      <h2 id="task">The task</h2>
+      <p>Dana runs communications at Arkhelm. Her email has the request and links to the current site, the brand sheet, and the event facts.</p>
       <ol>
-        <li>A short plan: what you'll do, in what order, and what you'll skip.</li>
-        <li>The Open House page, designed and built, with a working RSVP form and all its states.</li>
-        <li>Dana's three quick homepage asks, using your judgment where they pull against good design.</li>
-        <li>A small set of design tokens as CSS custom properties, used on both pages.</li>
-        <li>A pull request with screenshots, what changed, what you skipped, and how you tested.</li>
-        <li>One example of how you used AI, and one thing you corrected.</li>
-        <li>A plain-language wrap-up email to Dana.</li>
-        <li>Your 3 best UX improvements beyond what Dana asked for.</li>
+        <li><strong>Build the Open House page</strong> at <code>site/open-house.html</code>. Make it look like part of the homepage. A visitor should see what, when, and where right away. The RSVP form needs hover, focus, invalid, submitting, and success states on phone and desktop. There's no backend, so fake the submit.</li>
+        <li><strong>Make Dana's three homepage changes.</strong> Some of them work against good design. Decide, and say why.</li>
+        <li><strong>Turn the brand into a few CSS variables.</strong> Use them on both pages.</li>
+        <li><strong>Reply to Dana.</strong> Write the email you'd send her when you finish and commit it as <code>CLIENT_EMAIL.md</code>. Tell her what's ready, what isn't, and anything you need from her. Keep it short enough to read on a phone.</li>
       </ol>
-      <p class="note">The full details for each item are in the <a href="https://github.com/loopdash/design-engineer-challenge#readme">README</a>.</p>
+      <p class="note">Arkhelm, Dana, and everyone else here are made up. Don't look anyone up or contact anyone.</p>
     </section>
 
-    <section aria-labelledby="time">
-      <h2 id="time">Time and tools</h2>
-      <dl class="facts">
-        <div>
-          <dt>Time box</dt>
-          <dd>About 3 hours, 4 at most. Spend most of it on the new page. When time is up, stop and list what's left.</dd>
-        </div>
-        <div>
-          <dt>Tools</dt>
-          <dd>Anything you like: Claude, ChatGPT, Cursor, MCP tools, Figma. Be ready to explain every line.</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section aria-labelledby="rules">
-      <h2 id="rules">Ground rules</h2>
-      <ul>
-        <li>Plain HTML and CSS, plus a little vanilla JavaScript for the form. No frameworks or build tools.</li>
-        <li>Use the brand sheet's logo, colors, fonts, and photos. Don't add new brand colors or fonts.</li>
-        <li>Leave the root <code>index.html</code> and <code>email/index.html</code> alone. They are the brief, not the site.</li>
-      </ul>
+    <section aria-labelledby="ai">
+      <h2 id="ai">Use AI</h2>
+      <p>We use Claude, Cursor, ChatGPT, Figma AI, and MCP tools every day. Use them here too. In your pull request, paste one prompt that worked and one thing the AI got wrong that you fixed.</p>
     </section>
 
     <section aria-labelledby="submit">
-      <h2 id="submit">How to submit</h2>
+      <h2 id="submit">Submit</h2>
       <ol>
-        <li>Fork <a href="https://github.com/loopdash/design-engineer-challenge">the repo</a> and make a branch, such as <code>yourname/open-house</code>.</li>
-        <li>Commit as you go with clear messages.</li>
-        <li>Open a pull request to this repo's <code>main</code> branch and fill in the template.</li>
-        <li>Send us the PR link at the email address in your invite.</li>
+        <li>Fork <a href="https://github.com/loopdash/design-engineer-challenge">the repo</a> and work on a branch. Use plain HTML, CSS, and a little JavaScript, with no frameworks or build step.</li>
+        <li>Open a pull request to <code>main</code>. The template asks for screenshots, what you did and skipped, your AI example, and 3 UX ideas beyond the brief.</li>
+        <li>Email us the PR link at the address in your invite.</li>
       </ol>
+      <p>When time's up, stop and list what's left in the PR. We'd rather see one finished page than a rushed pass at every task.</p>
     </section>
 
     <section aria-labelledby="next">
-      <h2 id="next">What happens next</h2>
-      <p>We'll set up a 30 minute call with Gary. You'll walk through your page and PR and explain your choices. For a few minutes Gary will play Dana and bring you a new request, and you'll answer as you would on a real client call. Nothing to prepare beyond your submission.</p>
+      <h2 id="next">After you submit</h2>
+      <p>We'll set up a 30 minute call to walk through your page. For a few minutes, we'll play Dana and bring you a new request. You don't need to prepare.</p>
     </section>
 
     <section class="cta" aria-labelledby="start">
       <h2 id="start">Ready to start?</h2>
-      <p>Everything begins with Dana's email.</p>
-      <a class="btn" href="email/index.html">Read the client's email</a>
+      <p>Start with Dana's email.</p>
+      <a class="btn" href="email/index.html">Read Dana's email</a>
       <ul class="secondary">
         <li><a href="site/index.html">See the current site</a></li>
         <li><a href="brand/index.html">See the brand sheet</a></li>

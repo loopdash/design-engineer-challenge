@@ -70,7 +70,7 @@ Your 3 best UX improvements beyond what Dana asked for, best first. For each: th
 
 ## Client email
 
-Paste it here, or write "See CLIENT_EMAIL.md".
+Your reply to Dana goes in `CLIENT_EMAIL.md` (required). Anything else to note about it:
 
 ## Time spent
 
