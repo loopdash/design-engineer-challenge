@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>website before the open house</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e9ebee;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #1f2937;
+      line-height: 1.5;
+    }
+    .mail {
+      max-width: 720px;
+      margin: 32px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.12);
+      overflow: hidden;
+    }
+    .subject {
+      font-size: 22px;
+      font-weight: 600;
+      padding: 24px 28px 0;
+      margin: 0;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4px 12px;
+      padding: 16px 28px;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #4b5563;
+    }
+    .meta dt { font-weight: 600; color: #6b7280; }
+    .meta dd { margin: 0; }
+    .body { padding: 24px 28px 8px; font-size: 16px; }
+    .body p { margin: 0 0 16px; }
+    .body ul { margin: 0 0 16px; padding-left: 22px; }
+    .body li { margin-bottom: 8px; }
+    .sig { color: #4b5563; }
+    .attachments {
+      margin: 8px 28px 28px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 8px 0 0;
+      padding: 10px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 500;
+      background: #f9fafb;
+    }
+    .chip:hover, .chip:focus-visible { background: #eef2ff; outline: 2px solid #1d4ed8; outline-offset: 2px; }
+    .chip svg { flex: none; }
+    .back {
+      display: block;
+      max-width: 720px;
+      margin: 24px auto -16px;
+      padding: 0 4px;
+      font-size: 14px;
+    }
+    .back a { color: #4b5563; text-underline-offset: 3px; }
+    .back a:hover { color: #1f2937; }
+    .back a:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 2px; border-radius: 4px; }
+    @media (max-width: 600px) {
+      .back { margin: 0; padding: 12px 16px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+      .mail { margin: 0; border-radius: 0; }
+      .subject, .meta, .body, .attachments { padding-left: 16px; padding-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="back" aria-label="Challenge"><a href="../index.html">&larr; Back to the instructions</a></nav>
+  <article class="mail">
+    <h1 class="subject">website before the open house</h1>
+    <dl class="meta">
+      <dt>From</dt><dd>Dana Whitlock &lt;dana@arkhelm.example.com&gt;</dd>
+      <dt>To</dt><dd>Loopdash</dd>
+      <dt>Date</dt><dd>Tuesday 9:47 PM</dd>
+    </dl>
+
+    <div class="body">
+      <p>Hi, a few website things before the open house. The site, our brand sheet, and the event notes are attached.</p>
+      <ul>
+        <li>We need the Open House RSVP page. The nav already links to it but it doesn't exist yet.</li>
+        <li>Make the logo 20% bigger.</li>
+        <li>Careers needs a button people actually see, but not salesy. Make it say "Join the Mission". Marcus wants it giant.</li>
+        <li>We moved into Hangar 4, so the address should say Hangar 4, 2200 Range Road.</li>
+      </ul>
+      <p class="sig">Thanks, Dana</p>
+    </div>
+
+    <div class="attachments">
+      3 attachments
+      <br>
+      <a class="chip" href="../site/index.html">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.4 11.6 12.3 20.7a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg>
+        arkhelm-website (folder)
+      </a>
+      <a class="chip" href="../brand/index.html">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.4 11.6 12.3 20.7a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg>
+        arkhelm-brand-sheet
+      </a>
+      <a class="chip" href="../content/open-house.md">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.4 11.6 12.3 20.7a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg>
+        open-house-notes.md
+      </a>
+    </div>
+  </article>
+</body>
+</html>

@@ -6,13 +6,13 @@ Loopdash is a small web agency. In this job you read client email, design and bu
 
 ## The scenario
 
-Open `index.html` in the repo root. It is an email from Dana, head of communications at Arkhelm Aerospace, a hard-tech startup that builds reusable rockets. Marcus is the CEO. She attached three things:
+Start with `index.html` in the repo root. It is a one-page summary of these instructions, with a link to the email. The email itself is `email/index.html`. It is from Dana, head of communications at Arkhelm Aerospace, a hard-tech startup that builds reusable rockets. Marcus is the CEO. She attached three things:
 
 - **The current site** in `site/`. The homepage is finished and on brand. Treat it as the reference for how Arkhelm looks on the web.
 - **The brand sheet** in `brand/`. Logo files, colors, fonts, photography, and voice. Open `brand/index.html`.
 - **The event notes** in `content/open-house.md`. Facts for a page that doesn't exist yet. No layout, just facts.
 
-Prefer to look before you clone? The live versions are here: [Dana's email](https://loopdash.github.io/design-engineer-challenge/), [the current site](https://loopdash.github.io/design-engineer-challenge/site/), and [the brand sheet](https://loopdash.github.io/design-engineer-challenge/brand/). To do the work, fork the repo (steps below).
+Prefer to look before you clone? The live versions are here: [the instructions page](https://loopdash.github.io/design-engineer-challenge/), [Dana's email](https://loopdash.github.io/design-engineer-challenge/email/), [the current site](https://loopdash.github.io/design-engineer-challenge/site/), and [the brand sheet](https://loopdash.github.io/design-engineer-challenge/brand/). To do the work, fork the repo (steps below).
 
 The main job is the Open House RSVP page. The homepage nav already links to it, but nobody has designed it. You will, using only the brand sheet and the homepage as your guide. Dana's other asks are quick. Some are exact, some pull against good design. Make a call, and say what you decided.
 
@@ -43,7 +43,7 @@ Use Claude, ChatGPT, Cursor, MCP tools, Figma and Figma AI, or anything else you
 
 - Plain HTML and CSS, plus a little vanilla JavaScript for the form if you need it. No frameworks or build tools. The site has to work by opening the HTML files in a browser.
 - Use the brand sheet's logo, colors, fonts, and photos. Don't add new brand colors or fonts.
-- Leave the root `index.html` alone. It is the email, not the site.
+- Leave the root `index.html` (the instructions page) and `email/index.html` (the email) alone. They are the brief, not the site.
 
 ## How to submit
 
